@@ -1,0 +1,166 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto; /* Solo scroll vertical */
+  overflow-x: hidden; /* Evita scroll horizontal */
+  scroll-behavior: smooth;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Personalización para Chrome, Edge y Safari */
+.modal-content::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #222; /* Fondo oscuro */
+  border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #ffcc00; /* Color amarillo para contrastar */
+  border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #ff9900; /* Cambio de color al pasar el mouse */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+/* Ajuste de imagen dentro del modal */
+.modal-image {
+  width: 180px; /* Imagen más pequeña */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Espaciado debajo de la imagen */
+}
+
+/* Espaciado en la sección de enlaces */
+.modal-links {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid white;
+}
+
+.modal-links h3 {
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+.modal-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-links li {
+  margin: 8px 0; /* Más separación entre enlaces */
+}
+
+.modal-links a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilizar el scroll */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #ffcc00;
+  border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #ff9900;
+}
+
+.floating-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Contenedor para los botones de rating */
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 10px; /* Esto añade 10px de espacio a la izquierda y a la derecha */
+}
+
+/* Hover: naranja más claro */
+.rating-button:hover {
+  background-color: #FFB347;   /* Naranja más claro */
+}
+
+/* Botón seleccionado: se diferencia con un tono un poco distinto y escalado */
+.rating-button.selected {
+  background-color: #FF8C00;   /* Naranja un poco más oscuro */
+  transform: scale(1.1);
+}
+
+/* Display del rating seleccionado */
+.rating-display {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilo para la puntuación promedio */
+.aggregated-rating {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}

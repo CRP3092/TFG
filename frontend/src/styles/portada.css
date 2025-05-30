@@ -1,0 +1,40 @@
+/* src/styles/portada.css */
+.portada-content {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para resaltar el contenido */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  color: #fff;
+}
+
+.portada-content h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.portada-content p {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+.portada-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portada-buttons button {
+  padding: 15px 30px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.portada-buttons button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,95 @@
+.userProfile-container {
+  max-width: 1200px;
+  margin: 150px auto 20px auto; 
+  padding: 30px;
+  background: #222;
+  color: white;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación de fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.userProfile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* Contenedor principal en dos columnas: detalles y suscripción */
+.userProfile-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.userProfile-section {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* Centra el contenido dentro de cada sección */
+}
+
+/* Sección de Historial y Favoritos en grid flexible */
+.userProfile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.userProfile-section h3 {
+  margin-bottom: 15px;
+}
+
+.userProfile-section p,
+.userProfile-section li {
+  margin: 10px 0;
+}
+
+/* Listas sin estilo predeterminado */
+.userProfile-history ul,
+.userProfile-favorites ul {
+  list-style: none;
+  padding: 0;
+}
+
+.userProfile-history li,
+.userProfile-favorites li {
+  background: #444;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.favorites-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  margin-top: 15px;
+}
+
+.favorite-image {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
